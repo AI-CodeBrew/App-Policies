@@ -7,8 +7,22 @@ export const theLocalBaba: AppPolicy = {
   platform: "Android",
   effectiveDate: "July 21, 2026",
   lastUpdated: "July 21, 2026",
-  contactEmail: "support@thelocalbaba.com",
+  contactEmail: "oomerssaeed@gmail.com",
   website: "https://thelocalbaba.com",
+  accountDeletion: {
+    lastUpdated: "July 21, 2026",
+    howToRequest: [
+      "To request deletion of your account and associated data, please email us at oomerssaeed@gmail.com.",
+      "Include your registered email address in the request so we can locate your account.",
+    ],
+    whatHappens: [
+      "Your account, profile information, and login credentials will be permanently deleted within 30 days of your request.",
+      "Order history and transaction records may be retained for up to 2 years to comply with tax and legal obligations, but will be disassociated from your personal identity.",
+      "Any product images or content you uploaded will be removed from our systems.",
+    ],
+    questionsNote:
+      "If you have any questions about this process, contact us at oomerssaeed@gmail.com.",
+  },
   intro: [
     'Welcome to The LocalBaba ("we", "our", or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (The LocalBaba).',
     "Please read this Privacy Policy carefully. If you do not agree with the terms of this privacy policy, please do not access or use the application.",
@@ -90,7 +104,7 @@ export const theLocalBaba: AppPolicy = {
         "We retain your personal information only as long as necessary to fulfill the purposes set out in this Privacy Policy, unless a longer retention period is required by law.",
       ],
       bullets: [
-        "Requesting Data Deletion: You can request the deletion of your account and personal data at any time by contacting us at our support email or using the in-app deletion option.",
+        "Requesting Data Deletion: You can request the deletion of your account and personal data at any time by emailing oomerssaeed@gmail.com or using the in-app deletion option.",
       ],
     },
     {
@@ -128,7 +142,7 @@ export const theLocalBaba: AppPolicy = {
       ],
       bullets: [
         "App Name: The LocalBaba",
-        "Email: support@thelocalbaba.com",
+        "Email: oomerssaeed@gmail.com",
         "Website: https://thelocalbaba.com",
       ],
     },

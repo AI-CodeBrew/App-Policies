@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PolicyDocument } from "@/components/PolicyDocument";
+import { AccountDeletionDocument } from "@/components/AccountDeletionDocument";
 import { getAllAppSlugs, getAppBySlug } from "@/data/apps";
 
 type PageProps = {
@@ -19,16 +19,16 @@ export async function generateMetadata({
   const app = getAppBySlug(slug);
 
   if (!app) {
-    return { title: "Privacy Policy Not Found" };
+    return { title: "Account Deletion Not Found" };
   }
 
   return {
-    title: `${app.name} Privacy Policy`,
-    description: `Privacy Policy for ${app.name}. ${app.shortDescription}`,
+    title: `Delete Your Account – ${app.name}`,
+    description: `Request deletion of your ${app.name} account and associated data.`,
   };
 }
 
-export default async function PrivacyPolicyPage({ params }: PageProps) {
+export default async function AccountDeletionPage({ params }: PageProps) {
   const { slug } = await params;
   const app = getAppBySlug(slug);
 
@@ -46,13 +46,13 @@ export default async function PrivacyPolicyPage({ params }: PageProps) {
           ← All apps
         </Link>
         <Link
-          href={`/delete-account/${app.slug}`}
+          href={`/privacy/${app.slug}`}
           className="text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
         >
-          Delete account
+          Privacy policy
         </Link>
       </div>
-      <PolicyDocument app={app} />
+      <AccountDeletionDocument app={app} />
     </div>
   );
 }

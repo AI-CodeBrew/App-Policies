@@ -9,6 +9,13 @@ export type PolicySection = {
   bullets?: string[];
 };
 
+export type AccountDeletionInfo = {
+  lastUpdated: string;
+  howToRequest: string[];
+  whatHappens: string[];
+  questionsNote: string;
+};
+
 export type AppPolicy = {
   slug: string;
   name: string;
@@ -20,4 +27,5 @@ export type AppPolicy = {
   website?: string;
   intro: string[];
   sections: PolicySection[];
+  accountDeletion: AccountDeletionInfo;
 };

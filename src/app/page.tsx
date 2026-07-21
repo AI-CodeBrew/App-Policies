@@ -6,11 +6,11 @@ export default function HomePage() {
     <div>
       <section className="mb-10">
         <h1 className="font-display text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
-          App privacy policies
+          App privacy & account deletion
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-[var(--muted)]">
-          Public privacy policies for our apps on Google Play. Open an app below
-          for the full policy URL to use in Play Console.
+          Public privacy policies and account deletion instructions for our
+          Google Play apps. Use these URLs in Play Console.
         </p>
       </section>
 
