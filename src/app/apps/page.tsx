@@ -1,0 +1,26 @@
+import { AppCard } from "@/components/AppCard";
+import { MainTabs } from "@/components/MainTabs";
+import { apps } from "@/data/apps";
+
+export default function AppsPage() {
+  return (
+    <div>
+      <MainTabs active="apps" />
+      <section className="mb-10">
+        <h1 className="font-display text-3xl font-semibold tracking-tight text-[var(--ink)] sm:text-4xl">
+          Apps
+        </h1>
+        <p className="mt-3 max-w-2xl text-lg text-[var(--muted)]">
+          Privacy policies, terms, and account deletion pages for our mobile
+          apps. Open an app for Play Console URLs.
+        </p>
+      </section>
+
+      <section aria-label="Apps" className="space-y-4">
+        {apps.map((app) => (
+          <AppCard key={app.slug} app={app} />
+        ))}
+      </section>
+    </div>
+  );
+}
