@@ -16,7 +16,7 @@ export function AppCard({ app }: { app: AppPolicy }) {
             {app.shortDescription}
           </p>
           <p className="mt-3 text-sm text-[var(--muted)]">
-            {app.platform} · Updated {app.lastUpdated}
+            {app.platform} · {app.homepage.developer} · Updated {app.lastUpdated}
           </p>
         </div>
         <span

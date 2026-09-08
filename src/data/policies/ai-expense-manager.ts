@@ -9,6 +9,33 @@ export const aiExpenseManager: AppPolicy = {
   effectiveDate: "August 21, 2026",
   lastUpdated: "August 21, 2026",
   contactEmail: "fynktech@gmail.com",
+  homepage: {
+    developer: "FynkTech",
+    fullDescription: [
+      "AI Expense Manager is a personal finance app that helps you track income and expenses, set budget categories, and follow savings goals.",
+      "An in-app AI assistant can answer questions about your spending and give insights based on the financial data you choose to enter.",
+    ],
+    features: [
+      "Record income and expense transactions with categories, dates, and notes",
+      "Create and manage budget categories with allocated vs spent amounts",
+      "Set and track savings goals with targets and deadlines",
+      "Chat with an AI assistant for spending insights",
+      "Optional feedback on AI responses to improve answer quality",
+    ],
+    dataRequested: [
+      "Account details (name, email, password) when you register",
+      "Financial data you enter (transactions, budgets, savings goals)",
+      "AI assistant chat messages and responses",
+      "Optional feedback ratings and comments on AI answers",
+    ],
+    dataUsePurpose: [
+      "To create, maintain, and authenticate your account",
+      "To power expense tracking, budgets, and savings goals you configure",
+      "To run the AI assistant and keep your chat history for continuity",
+      "To improve assistant quality using optional feedback you submit",
+      "We do not collect location, contacts, camera, or advertising IDs, and we do not sell your data",
+    ],
+  },
   accountDeletion: {
     lastUpdated: "August 21, 2026",
     howToRequest: [

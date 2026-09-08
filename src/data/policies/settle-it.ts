@@ -8,6 +8,35 @@ export const settleIt: AppPolicy = {
   effectiveDate: "August 18, 2026",
   lastUpdated: "August 18, 2026",
   contactEmail: "fynktech@gmail.com",
+  homepage: {
+    developer: "FynkTech",
+    fullDescription: [
+      "Settle It is a group expense-splitting app that helps friends, roommates, and teams track shared costs and settle balances fairly.",
+      "Create groups, add expenses, split amounts among members, chat within the group, and export PDF summaries when you need a clear record of who owes what.",
+    ],
+    features: [
+      "Create and manage shared expense groups",
+      "Add expenses, amounts, and notes; see balances per member",
+      "Invite others with invite codes or links",
+      "In-group chat for coordination",
+      "Optional profile and group photos",
+      "Export PDF summaries / receipts of shared expenses",
+    ],
+    dataRequested: [
+      "Account details (name, email, password) when you register",
+      "Optional profile or group photos you choose to upload",
+      "Group, expense, and balance data you and members enter",
+      "In-group chat messages",
+      "Invite codes/links you generate",
+    ],
+    dataUsePurpose: [
+      "To create and authenticate your account so you can use Settle It securely",
+      "To operate group expense tracking, balances, invites, and chat",
+      "To store and sync your groups across devices via our backend",
+      "To generate PDF exports you request",
+      "We do not sell your personal data or use it for advertising",
+    ],
+  },
   accountDeletion: {
     lastUpdated: "August 18, 2026",
     howToRequest: [

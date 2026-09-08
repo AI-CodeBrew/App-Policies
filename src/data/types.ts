@@ -25,6 +25,19 @@ export type TermsOfService = {
   sections: PolicySection[];
 };
 
+export type AppHomepage = {
+  /** Developer / brand that publishes the app. */
+  developer: string;
+  /** Full description of what the app does (visible without login). */
+  fullDescription: string[];
+  /** Key features users can perform in the app. */
+  features: string[];
+  /** Transparent explanation of why the app requests user data. */
+  dataUsePurpose: string[];
+  /** Short list of the main data categories requested (for transparency). */
+  dataRequested: string[];
+};
+
 export type AppPolicy = {
   slug: string;
   name: string;
@@ -35,6 +48,8 @@ export type AppPolicy = {
   contactEmail: string;
   /** Public product / marketing site URL (optional). */
   website?: string;
+  /** Google / Play Console–ready app homepage content (public, no login). */
+  homepage: AppHomepage;
   intro: string[];
   sections: PolicySection[];
   accountDeletion: AccountDeletionInfo;

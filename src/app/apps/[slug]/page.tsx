@@ -23,8 +23,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: app.name,
-    description: app.shortDescription,
+    title: `${app.name} — Official Homepage`,
+    description: `${app.shortDescription} Official homepage for ${app.name} by ${app.homepage.developer}. Includes app description, data use transparency, and Privacy Policy link.`,
   };
 }
 

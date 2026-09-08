@@ -9,6 +9,34 @@ export const theLocalBaba: AppPolicy = {
   lastUpdated: "July 21, 2026",
   contactEmail: "oomerssaeed@gmail.com",
   website: "https://thelocalbaba.com",
+  homepage: {
+    developer: "The LocalBaba",
+    fullDescription: [
+      "The LocalBaba is a wholesale shopping app built for shop owners and businesses who want to browse products, send inquiries, and place wholesale orders.",
+      "Create a business account, manage delivery details, track order preferences, and contact support when you need help fulfilling wholesale needs.",
+    ],
+    features: [
+      "Register with business/shop details and sign in securely",
+      "Browse wholesale products and view details",
+      "Send product inquiries and place orders",
+      "Manage delivery addresses and order preferences",
+      "Customer support messaging and transactional updates",
+    ],
+    dataRequested: [
+      "Account & identity data (name, email, phone, business/shop name, credentials)",
+      "Location & delivery data (address, city, state, postal code)",
+      "Order & transaction information (purchase history, inquiries, cart, preferences)",
+      "Support messages and feedback you send us",
+      "Device and usage data needed to run and improve the app",
+    ],
+    dataUsePurpose: [
+      "To create and manage your wholesale account and authenticate you",
+      "To process inquiries, orders, and delivery logistics",
+      "To provide customer support and transactional updates",
+      "To maintain security and improve app performance",
+      "We do not sell, rent, or trade your personal information",
+    ],
+  },
   accountDeletion: {
     lastUpdated: "July 21, 2026",
     howToRequest: [

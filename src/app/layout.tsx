@@ -15,11 +15,11 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "Privacy Policies",
-    template: "%s · Privacy Policies",
+    default: "App Homepages & Privacy Policies",
+    template: "%s",
   },
   description:
-    "Privacy policies for our mobile apps and websites.",
+    "Official app homepages, privacy policies, and account deletion pages for our published apps and websites.",
 };
 
 export default function RootLayout({
@@ -39,7 +39,7 @@ export default function RootLayout({
               href="/apps"
               className="font-display text-lg font-semibold tracking-tight text-[var(--ink)]"
             >
-              Privacy Policies
+              App Policies
             </Link>
             <nav className="flex gap-4 text-sm">
               <Link
@@ -62,7 +62,8 @@ export default function RootLayout({
         </main>
         <footer className="border-t border-[var(--border)]/80">
           <div className="mx-auto max-w-3xl px-5 py-6 text-sm text-[var(--muted)] sm:px-6">
-            Privacy policies for our published apps and websites.
+            Official app homepages and privacy policies. Public pages — no login
+            required.
           </div>
         </footer>
       </body>

@@ -9,6 +9,32 @@ export const fairyTalesAi: AppPolicy = {
   effectiveDate: "August 21, 2026",
   lastUpdated: "August 21, 2026",
   contactEmail: "fynktech@gmail.com",
+  homepage: {
+    developer: "FynkTech",
+    fullDescription: [
+      "FairyTales AI generates AI-illustrated storybooks. Choose a theme, enter a prompt, and the app creates story text with matching illustrations, narrates the story aloud on your device, and lets you export or share the finished book.",
+      "There is no account or login — you can use FairyTales AI without signing in. The app is designed for creative storytelling and does not require a user profile.",
+    ],
+    features: [
+      "Pick a theme (Adventure, Fantasy, Space, Nature, Friendship, Science) and write a prompt",
+      "Generate illustrated story text with AI",
+      "Listen to on-device text-to-speech narration",
+      "Export stories as PDF or share via your device share sheet",
+      "Optional feedback or report on a generated story",
+      "No sign-up, no passwords, no social login",
+    ],
+    dataRequested: [
+      "Story prompts and theme selections you submit for generation",
+      "Optional feedback/report text if you choose to submit it",
+      "Standard analytics events (screens viewed, feature usage, device/platform) via Firebase Analytics",
+    ],
+    dataUsePurpose: [
+      "To generate story text and illustrations from your prompt via our backend and Google Gemini",
+      "To improve the app using optional feedback and aggregated analytics",
+      "Narration runs on-device; we do not receive microphone or audio recordings",
+      "We do not create accounts, sell data, or use advertising SDKs",
+    ],
+  },
   accountDeletion: {
     lastUpdated: "August 21, 2026",
     noAccountSystem: true,

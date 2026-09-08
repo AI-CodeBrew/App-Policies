@@ -11,8 +11,9 @@ export default function AppsPage() {
           Apps
         </h1>
         <p className="mt-3 max-w-2xl text-lg text-[var(--muted)]">
-          Privacy policies, terms, and account deletion pages for our mobile
-          apps. Open an app for Play Console URLs.
+          Official public homepages for our apps. Each page identifies the app
+          and developer, describes features, explains why data is requested, and
+          links to the Privacy Policy — no login required.
         </p>
       </section>
 
