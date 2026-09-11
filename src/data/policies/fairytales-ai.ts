@@ -13,7 +13,7 @@ export const fairyTalesAi: AppPolicy = {
     developer: "FynkTech",
     fullDescription: [
       "FairyTales AI generates AI-illustrated storybooks. Choose a theme, enter a prompt, and the app creates story text with matching illustrations, narrates the story aloud on your device, and lets you export or share the finished book.",
-      "There is no account or login — you can use FairyTales AI without signing in. The app is designed for creative storytelling and does not require a user profile.",
+      "An account is optional — you can generate one-off stories and browse the public Library without signing in. Creating an account (email/password or Google Sign-In) lets you save your story history and revisit or favorite past stories.",
     ],
     features: [
       "Pick a theme (Adventure, Fantasy, Space, Nature, Friendship, Science) and write a prompt",
@@ -21,18 +21,20 @@ export const fairyTalesAi: AppPolicy = {
       "Listen to on-device text-to-speech narration",
       "Export stories as PDF or share via your device share sheet",
       "Optional feedback or report on a generated story",
-      "No sign-up, no passwords, no social login",
+      "Optional account (email/password or Google Sign-In) to save and revisit your story history",
     ],
     dataRequested: [
       "Story prompts and theme selections you submit for generation",
+      "Account information if you sign up: email address, display name, and (for password accounts) a hashed password",
       "Optional feedback/report text if you choose to submit it",
-      "Standard analytics events (screens viewed, feature usage, device/platform) via Firebase Analytics",
+      "Basic usage/visit events (randomly generated visitor identifier and timestamp) recorded by our own backend",
     ],
     dataUsePurpose: [
       "To generate story text and illustrations from your prompt via our backend and Google Gemini",
-      "To improve the app using optional feedback and aggregated analytics",
+      "To create and manage your account and let you save, revisit, or favorite stories, if you choose to sign up",
+      "To improve the app using optional feedback and our own basic usage tracking",
       "Narration runs on-device; we do not receive microphone or audio recordings",
-      "We do not create accounts, sell data, or use advertising SDKs",
+      "We do not sell data or use advertising SDKs, and we do not use any third-party analytics SDK",
     ],
   },
   accountDeletion: {
