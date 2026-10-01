@@ -14,7 +14,7 @@ Official public app homepages, privacy policies, terms, and account deletion pag
 | --- | --- | --- |
 | Settle It | `/apps/settleit` | `/apps/settleit/privacypolicy` |
 | AI Expense Manager | `/apps/aiexpensemanager` | `/apps/aiexpensemanager/privacypolicy` |
-| FairyTales AI | `/apps/fairytalesai` | `/apps/fairytalesai/privacypolicy` |
+| FairyTales AI | `/apps/fairytaleai` | `/apps/fairytaleai/privacypolicy` |
 | The LocalBaba | `/apps/thelocalbaba` | `/apps/thelocalbaba/privacypolicy` |
 
 Also available: `/apps/<slug>/termsofservice` (where published) and `/apps/<slug>/deleteaccount`.

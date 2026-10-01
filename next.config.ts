@@ -19,7 +19,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/privacy/fairytales-ai",
-        destination: "/apps/fairytalesai/privacypolicy",
+        destination: "/apps/fairytaleai/privacypolicy",
+        permanent: true,
+      },
+      {
+        source: "/apps/fairytalesai/privacypolicy",
+        destination: "/apps/fairytaleai/privacypolicy",
         permanent: true,
       },
       {
@@ -44,7 +49,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/delete-account/fairytales-ai",
-        destination: "/apps/fairytalesai/deleteaccount",
+        destination: "/apps/fairytaleai/deleteaccount",
+        permanent: true,
+      },
+      {
+        source: "/apps/fairytalesai/deleteaccount",
+        destination: "/apps/fairytaleai/deleteaccount",
         permanent: true,
       },
       {

@@ -1,7 +1,7 @@
 import type { AppPolicy } from "../types";
 
 export const fairyTalesAi: AppPolicy = {
-  slug: "fairytalesai",
+  slug: "fairytaleai",
   name: "FairyTales AI",
   shortDescription:
     "AI-illustrated storybook generator — pick a theme and prompt, get an illustrated, narrated story.",
